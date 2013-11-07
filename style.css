@@ -367,6 +367,9 @@ input, textarea {
 .flatbtn:visited {
   color: white;
 }
+.flatbtn:visited:hover, .flatbtn:visited:active {
+  color: #aaaaaa;
+}
 
 .btn {
   display: inline-block;
@@ -619,6 +622,9 @@ h3 {
 }
 .btn01:visited {
   color: #eeeeee;
+}
+.btn01:visited:hover, .btn01:visited:active {
+  color: #44bea7;
 }
 .btn01 i {
   font-size: 1.2em;
