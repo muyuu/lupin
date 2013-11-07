@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>lupin.js</title>
+  </head>
+  <body></body>
+  <header class="pageHeader">
+    <h1>jQuery plugin lupin</h1>
+    <p>要素を非表示にして、非表示にした要素がウィンドウの指定した高さまで来ると表示させるプラグイン</p>
+    <p>
+      <Build>Build by Grunt, CoffeeScript.</Build>
+    </p>
+  </header>
+  <section class="use">
+    <div class="container">
+      <div class="row">
+        <div class="col6">
+          <h2>インストール</h2>
+          <p>jQueryの読み込み</p>
+          <pre><code>&lt;script src='//code.jquery.com/jquery-1.10.1.min.js'&gt;&lt;/script&gt;</code></pre>
+          <p>Pocket.jsの読み込み（なくても問題ない）</p>
+          <pre><code>&lt;script src='pocket.min.js'&gt;&lt;/script&gt;</code></pre>
+          <p>lupin.jsの読み込み</p>
+          <pre><code>&lt;script src='lupin.min.js'&gt;&lt;/script&gt;</code></pre>
+        </div>
+        <div class="col6">
+          <h2>使い方</h2>
+          <p>セレクタに表示非表示を切り替えたい要素を入れる</p>
+          <p>デフォルトの表示位置は画面の半分</p>
+          <p>表示位置の切り替えは offset で指定</p>
+          <p>表示アニメーションの秒数指定は animationTime で指定</p>
+          <pre><code>$('.one p').lupin();
+$('.two p').lupin({offset:'2/3'});
+$('.three p').lupin({animationTime:200});
+$('.four p').lupin({offset:'quarter'});</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="demo">
+    <div class="container">
+      <h2>デモ</h2>
+      <div class="one">
+        <div class="container">
+          <p class="lupin">
+            これがデフォルトの表示位置です。<br>
+            画面の下から1/3の位置まで来たら表示されます。
+          </p>
+        </div>
+      </div>
+      <div class="two">
+        <div class="container">
+          <p>
+            このテキストは画面の下から2/3程度に来れば表示されます<br>
+            オプションで { offset: '2/3' } と指定してください。
+            
+          </p>
+        </div>
+      </div>
+      <div class="three">
+        <div class="container">
+          <p class="lupin">
+            表示アニメーションの長さをミリセカンドで指定できます。<br>
+            オプションで { animationTime: 1000 } とかを指定してください。<br>
+            このテキストは1000の指定で1秒で表示するテキストです。
+          </p>
+        </div>
+      </div>
+      <div class="four">
+        <div class="container">
+          <p class="lupin">
+            表示位置の指定は数値と、特定の文字列でも可能です。<br>
+            { offset: 500 }<br>
+            "half", "quarter", "1/3", "1/4", "2/3", "3/4"
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="pageFooter">
+    <p class="copyrightlupin js">Created by <a href="http://anticyb.org/" target="_blank">muyuu</a></p>
+  </footer>
+  <script src="libs/labjs/LAB.min.js"></script>
+  <script>
+    $LAB
+    .script("libs/jquery/jquery.min.js").wait()
+    .script("libs/pocket/pocket.min.js").wait()
+    .script("lupin.js")
+    .script("app.js");
+    
+  </script>
+</html>

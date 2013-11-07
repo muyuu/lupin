@@ -1,0 +1,23 @@
+{
+  "name": "pocket",
+  "main": "pocket.min.js",
+  "ignore": [
+    "docs/**",
+    "node_modules/*",
+    "source/**",
+    ".gitignore",
+    "Gruntfile.coffee",
+    "index.html",
+    "package.json"
+  ],
+  "homepage": "https://github.com/muyuu/pocket",
+  "_release": "c2bc73e548",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c2bc73e54864ce9c77b1526c64bad370b3fbf8e1"
+  },
+  "_source": "git://github.com/muyuu/pocket.git",
+  "_target": "*",
+  "_originalSource": "pocket"
+}
