@@ -20,7 +20,23 @@
   &:visited
     color: $color
 
+@mixin flatbtn ( $color: #fff, $bg: #aaa )
+  @include inline-block
+  padding: 0.4em 1em
+  color: $color
+  background: $bg
+  border: 1px solid $color
+  -webkit-border-radius: 4px
+  border-radius: 4px
+  @include text-shadow(0px, 1px, 0px, rgba(0,0,0,0.6))
+  &:hover,&:active,&:focus
+    color: $bg
+    background: $color
+
 // ボタン
+.flatbtn
+  @include flatbtn()
+
 .btn
   @include btn()
 

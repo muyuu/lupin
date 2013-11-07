@@ -10,10 +10,10 @@
   "devDependencies": {
     "jquery": "1.9.1",
     "pocket": "*",
-    "labjs": "*"
+    "labjs": "*",
+    "font-awesome": "~4.0.3"
   },
   "exportsOverride": {
-
     "jquery": "jquery.min.js",
     "labjs": "LAB.min.js"
   }
