@@ -167,6 +167,7 @@ pre, code {
   font-family: "Source Code Pro", sans-serif;
   font-size: 0.8em;
   margin-top: 0.8em;
+  overflow: scroll;
 }
 
 img {
@@ -628,4 +629,17 @@ h3 {
 }
 .btn01 i {
   font-size: 1.2em;
+}
+
+@media screen and (max-width: 800px) {
+  .pageHeader {
+    padding: 2em;
+  }
+  .pageHeader h1 {
+    font-size: 2em;
+  }
+
+  .btn01 {
+    font-size: 1.4em;
+  }
 }
