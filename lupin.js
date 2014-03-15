@@ -32,7 +32,7 @@
           _this.opts.offset = _this.windowHeight / 4 * 3;
           break;
         case "3/4":
-          _this.opts.offset = _this.windowHeight / 4 * 1;
+          _this.opts.offset = _this.windowHeight / 4;
       }
       _this.offsetTop = _this.offset().top - _this.opts.offset;
     };
