@@ -53,7 +53,7 @@
         when "1/4", "quarter"
           @.opts.offset = @.windowHeight / 4 * 3
         when "3/4"
-          @.opts.offset = @.windowHeight / 4 * 1
+          @.opts.offset = @.windowHeight / 4
 
       @.offsetTop = @.offset().top - @.opts.offset
       return
@@ -78,9 +78,9 @@
           if @.opts.animationTime is 0
             @.css "opacity":"1"
           else
-            @.animate "opacity":"1", @.opts.animationTime
+            @.animate("opacity":"1", @.opts.animationTime)
       else
-        @.animate "opacity":"1", @.opts.animationTime
+        @.animate("opacity":"1", @.opts.animationTime)
       @.counter = 0
       return
 
